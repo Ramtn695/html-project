@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+    <style>
+        table,tr,th,td {
+            border: 2px solid rgb(226, 78, 127);
+            padding: 10px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        table {
+            box-shadow: 0 0 20px rgb(0, 0, 0);
+        }
+
+        th {
+            background-color: rgb(194, 162, 202);
+            color: blue;
+            font-size: 20px;
+        }
+
+        tr {
+            background-color: rgba(128, 128, 128, 0.459);
+            color: brown;
+            font-weight: bolder;
+        }
+        h2{
+            color: rgb(153, 15, 26);
+        }
+        .top{
+            background-color: rgba(223, 162, 192, 0.733);
+            text-align: center;
+            color: red;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 0 0 30px black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- HTML Table -->
+    <div class="top">
+        <h2>HTML TABLES</h2>
+    </div>
+    <div>
+        <h2>Normal TABLE</h2>
+        <table>
+            <th>Sl.No</th>
+            <th>Courses</th>
+            <th>Duration</th>
+            <th>Training Mode</th>
+            <tr>
+                <td>1</td>
+                <td>Web Development Basics</td>
+                <td>10 Days</td>
+                <td>Online/Ofline</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>JavaScript & JQuery</td>
+                <td>20 Days</td>
+                <td>Online/Ofline</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Advanced JavaScript</td>
+                <td>20 Days</td>
+                <td>Online/Ofline</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Angular10</td>
+                <td>50 Days</td>
+                <td>Online/Ofline</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>ReactJs-Latest</td>
+                <td>50 Days</td>
+                <td>Online/Ofline</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2>Table with RowSpan</h2>
+
+        <table>
+            <th>Sl.No</th>
+            <th>Courses</th>
+            <th>Duration</th>
+            <th>Training Mode</th>
+            <tr>
+                <td>1</td>
+                <td>Web Development Basics</td>
+                <td>10 Days</td>
+                <td rowspan="5">Online/Ofline</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>JavaScript & JQuery</td>
+                <td rowspan="2">20 Days</td>
+
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Advanced JavaScript</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Angular10</td>
+                <td rowspan="2">50 Days</td>
+
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>ReactJs-Latest</td>
+
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2>Table with ColSpan</h2>
+        <table>
+            <th>Sl.No</th>
+            <th>Courses</th>
+            <th>Duration</th>
+            <th colspan="2">Training Mode</th>
+            <tr>
+                <td>1</td>
+                <td>Web Development Basics</td>
+                <td>10 Days</td>
+                <td rowspan="5">Online</td>
+                <td rowspan="5">Ofline</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>JavaScript & JQuery</td>
+                <td rowspan="2">20 Days</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Advanced JavaScript</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Angular10</td>
+                <td rowspan="2">50 Days</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>ReactJs-Latest</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
