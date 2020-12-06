@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium',  sans-serif;
+        }
+        #home{
+            padding: 10px;
+            background-image: linear-gradient( rgb(52, 23, 214), rgb(26, 189, 53));
+            color: wheat;
+        }
+        h2{
+            text-align: center;
+            color: yellow;
+        }
+        #home p{
+            text-align: left;
+        }
+        #form {
+            background-image: linear-gradient(90deg, rgb(151, 34, 34),#f32b5d, #ff8a47);
+            text-align: center;
+            height: 400px;
+        }
+        span{
+            color:white;
+            font-family: 'Franklin Gothic Medium',  sans-serif;
+        }
+        input {
+            margin: 14px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="home">
+        <h2>HTML Forms</h2>
+        <p>
+            An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+            <br>
+            The HTML <b>form</b> element is used to create an HTML form / get input details from user.
+        </p>
+    </div>
+    <div id="form">
+        <h2>Login Form</h2>
+        <form action="#" method="POST">
+            <label for="Email">Email-Id :</label>
+            <input type="email" name="email" id="email" placeholder="Enter your Mail Id" required><span>*required field</span><br>
+            <label for="Password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter your Password" required><span>*required field</span><br>
+            <a href="#" id="forgot">Forgot Password</a> <br>
+            <input type="submit" value="LogIn">
+            <input type="reset" value="Cancel"> <br>
+            <p style="font-weight: bold;">No account! Register yourself  <a href="#" title="Register Yourself">
+                    Register</a></p>
+        </form>
+    </div>
+</body>
+
+</html>
